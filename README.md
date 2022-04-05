@@ -2,10 +2,10 @@
 
 ## Description
 
-An brochure website built with React js.
-It promoting Phamarcy Vending Machine.
-The website have button function such as Introduce, Advantage, Contact which will scroll to the section when click.
-The Contact Us button will providing link to my personal porfolio webpage. [here](https://weihang-profolio.netlify.app/).
+An brochure website built with React js.<br />
+It promoting Phamarcy Vending Machine.<br />
+The website have button function such as Introduce, Advantage, Contact which will scroll to the section when click.<br />
+The Contact Us button will providing link to my personal porfolio webpage. [here](https://weihang-profolio.netlify.app/).<br />
 
 ## Demo
 
