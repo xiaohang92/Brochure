@@ -1,38 +1,203 @@
-.App {
+*{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #12161a;
+  color: aliceblue;
+  align-items: stretch;
+  padding:20px;
+}
+
+#brand{
+  font-size: larger;
+  cursor: pointer;
+}
+
+.link{
+  cursor: pointer;
+}
+
+.homepage {
+  background-image: url(../public/images/medicine2.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80vh;
+  width: 100%;
+}
+
+#h1{
+  color: rgb(139, 100, 202);
+  position: relative;
+  left: 100px;
+  top: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 4.5vw;
+  text-transform: uppercase; 
+  text-shadow: 1px 1px 2px rgb(82, 25, 156), 0 0 1em rgb(170, 39, 100), 0 0 0.2em rgb(221, 120, 176);
+}
+
+.introduce{
   text-align: center;
+  min-height: 80vh;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.introduce-h3{
+  font-size: 75px; 
+  line-height: 74px; 
+  font-weight: 700; 
+  padding: 20px; 
+  font-family: 'Libre Baskerville', serif; 
+  margin-bottom: 10px;
+  border-bottom: 3px #12161a ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.introduce-span{
+  font-family: "Open Sans", Sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.introduce-paragraph{
+  margin: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+}
+
+.advantage{
+  min-height: 60vh;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px;
+  background-color: #12161a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.advantage-h3{
+  text-align: center;
+  margin-bottom: 50px;
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.advantage-wrap{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  grid-auto-rows: minmax(100px, auto);
+  text-align: center;
+}
+
+.icon{
+  height: 100px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.contact{
+  min-height: 60vh;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.contact-h3{
+  margin-top: auto;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -0.5px;
+}
+
+.contact-span{
+  font-family: "Montserrat", Sans-serif;
+  font-size: 24px;
+}
+
+.contact-button{
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: auto;
+}
+
+.contact-button:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.copyright{
+  text-align: center;
+  padding: 40px;
+  font-size: larger;
+  font-weight: 500;
+  background-color: #12161a;
+  color: white;
+}
+
+.popup-box {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 110vw;
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+  width: 50%;
+  min-height: 300px;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 4px;
+  margin: 20% auto;
+  padding: 20px;
+  overflow: auto;
+  border-radius: 25px;
+}
+
+.contact-box {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-box >span >a {
+ margin: 5px;
+}
+
+@media only screen and (max-width: 810px) {
+ *{
+   padding: 0;
+   margin: 0;
+   text-align: center;
+ }
+
+ #h1{
+   margin: 0px;
+   left: 0;
+   font-size: 1.5rem;
+ }
+
+ .introduce-h3 {
+   font-size: 2.5rem;
+ };
+
 }
